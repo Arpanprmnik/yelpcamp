@@ -1,10 +1,10 @@
-Campin
+CAMPING /n
 A fully functional camping site application where users can browse, add, and review campgrounds. The app is deployed on Render and uses MongoDB Atlas for cloud database storage and Cloudinary for cloud-based image storage.
 
-Website
+Website /n
 Visit the live version of the site: [Campin](https://campin-o7hu.onrender.com/)
 
-Features
+Features /n
 User authentication with Passport.js
 Campground creation and management
 Review system for campgrounds
