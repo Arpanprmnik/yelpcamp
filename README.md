@@ -4,7 +4,7 @@ A fully functional camping site application where users can browse, add, and rev
 Website 
 Visit the live version of the site: [Campin](https://campin-o7hu.onrender.com/)
 
-Features 
+Features :-
 User authentication with Passport.js
 Campground creation and management
 Review system for campgrounds
@@ -13,7 +13,9 @@ Sanitization of input to prevent NoSQL injection attacks
 Cloud-based image uploads via Cloudinary
 Database hosted on MongoDB Atlas
 Error handling for improved user experience
-Tech Stack
+
+
+Tech Stack :-
 Node.js with Express.js for the backend
 MongoDB Atlas for the database
 Cloudinary for image storage
