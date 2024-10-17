@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
-// console.log(process.env.DB_URL);
+console.log(process.env.DB_URL);
 
 const express = require('express');
 const path = require('path');
@@ -25,9 +25,9 @@ const Campground = require('./models/campground');
 const userRoutes = require('./routes/user');
 const campgroundsRoutes = require('./routes/campgrounds');
 const reviewsRoutes = require('./routes/reviews');
-const dbUrl = 'mongodb://127.0.0.1:27017/yelp-camp' ;
+const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/yelp-camp' ;
 // process.env.DB_URL ||
-mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp');
+mongoose.connect(dbUrl);
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
